@@ -6,7 +6,7 @@
     $all_setting = $CI->Model_common->all_setting();
     ?>
     <!--Call Start-->
-    <div class="call-us" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $footer_setting_lang_independent['cta_background']; ?>)">
+    <!-- <div class="call-us" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $footer_setting_lang_independent['cta_background']; ?>)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 col-md-8 col-12">
@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--Call End-->
 
     <!--Footer-Area Start-->

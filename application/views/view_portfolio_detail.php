@@ -39,7 +39,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="portfolio-sidebar">
-                    <div class="portfolio-details headstyle">
+                    <!-- <div class="portfolio-details headstyle">
                         <h4><?php echo SIDEBAR_PORTFOLIO_HEADING_1; ?></h4>
                         <ul>
                             <li><span><?php echo CLIENT_NAME; ?>:</span><br><?php echo $portfolio['client_name']; ?></li>
@@ -48,7 +48,7 @@
                             <li><span><?php echo PROJECT_END_DATE; ?>:<br></span><?php echo $portfolio['end_date']; ?></li>
                             <li><span><?php echo CLIENT_COMMENT; ?>:<br></span><?php echo $portfolio['client_comment']; ?></li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="portfolio-form headstyle mt-30">
                         <h4><?php echo SIDEBAR_PORTFOLIO_HEADING_2; ?></h4>
                         <?php echo form_open(base_url().'portfolio/send_email',array('class' => '')); ?>

@@ -102,8 +102,8 @@ if(!$this->session->userdata('id')) {
                     <?php echo form_close(); ?>
 
 
-                    <h3 class="sec_title">Call to Action (CTA) Background</h3>
-                    <?php echo form_open_multipart(base_url().'admin/footer-setting/update',array('class' => 'form-horizontal')); ?>
+                    <!-- <h3 class="sec_title">Call to Action (CTA) Background</h3> -->
+                    <!-- <?php echo form_open_multipart(base_url().'admin/footer-setting/update',array('class' => 'form-horizontal')); ?>
                         <input type="hidden" name="previous_photo" value="<?php echo $footer_setting_lang_independent['cta_background']; ?>">
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Existing Background</label>
@@ -124,7 +124,7 @@ if(!$this->session->userdata('id')) {
                             </select>
                             </div>
                         </div>
-                    <?php echo form_close(); ?>
+                    <?php echo form_close(); ?> -->
 
 
                 </div>

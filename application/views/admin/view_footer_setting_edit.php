@@ -73,7 +73,7 @@ if(!$this->session->userdata('id')) {
                             </div>
                         </div>
 
-                        <h3 class="sec_title">Call to Action (CTA) Section</h3>
+                        <!-- <h3 class="sec_title">Call to Action (CTA) Section</h3>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Text </label>
                             <div class="col-sm-9">
@@ -91,7 +91,7 @@ if(!$this->session->userdata('id')) {
                             <div class="col-sm-9">
                                 <input type="text" autocomplete="off" class="form-control" name="cta_button_url" value="<?php echo $footer_setting['cta_button_url']; ?>">
                             </div>
-                        </div>
+                        </div> -->
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label"></label>
                             <div class="col-sm-6">

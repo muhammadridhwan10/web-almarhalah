@@ -76,53 +76,53 @@
 
 	<div class="wrapper">
 
-		<header class="main-header">
+	<header class="main-header">
 
-			<a href="<?php echo base_url(); ?>admin/dashboard" class="logo">
-				<span class="logo-lg"><?php echo $setting['website_name']; ?></span>
+		<a href="<?php echo base_url(); ?>admin/dashboard" class="logo">
+			<span class="logo-lg"><?php echo $setting['website_name']; ?></span>
+		</a>
+
+		<nav class="navbar navbar-static-top">
+
+			<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+				<span class="sr-only">Alihkan navigasi</span>
 			</a>
 
-			<nav class="navbar navbar-static-top">
-				
-				<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-					<span class="sr-only">Toggle navigation</span>
-				</a>
+			<span style="float:left;line-height:50px;color:#fff;padding-left:15px;font-size:18px;">Panel Admin</span>
 
-				<span style="float:left;line-height:50px;color:#fff;padding-left:15px;font-size:18px;">Admin Panel</span>
+			<div class="navbar-custom-menu">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="<?php echo base_url(); ?>" target="_blank">Kunjungi Website</a>
+					</li>
 
-				<div class="navbar-custom-menu">
-					<ul class="nav navbar-nav">
-						<li>
-							<a href="<?php echo base_url(); ?>" target="_blank">Visit Website</a>
-						</li>
+					<li class="dropdown user user-menu">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<?php if($this->session->userdata('photo') == ''): ?>
+								<img src="<?php echo base_url(); ?>public/img/no-photo.jpg" class="user-image" alt="Foto pengguna">
+							<?php else: ?>
+								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $this->session->userdata('photo'); ?>" class="user-image" alt="Foto pengguna">
+							<?php endif; ?>
 
-						<li class="dropdown user user-menu">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<?php if($this->session->userdata('photo') == ''): ?>
-									<img src="<?php echo base_url(); ?>public/img/no-photo.jpg" class="user-image" alt="user photo">
-								<?php else: ?>
-									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $this->session->userdata('photo'); ?>" class="user-image" alt="user photo">
-								<?php endif; ?>
-								
-								<span class="hidden-xs"><?php echo $this->session->userdata('full_name'); ?></span>
-							</a>
-							<ul class="dropdown-menu">
-								<li class="user-footer">
-									<div>
-										<a href="<?php echo base_url(); ?>admin/profile" class="btn btn-default btn-flat">Edit Profile</a>
-									</div>
-									<div>
-										<a href="<?php echo base_url(); ?>admin/login/logout" class="btn btn-default btn-flat">Log out</a>
-									</div>
-								</li>
-							</ul>
-						</li>
-						
-					</ul>
-				</div>
+							<span class="hidden-xs"><?php echo $this->session->userdata('full_name'); ?></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="user-footer">
+								<div>
+									<a href="<?php echo base_url(); ?>admin/profile" class="btn btn-default btn-flat">Edit Profil</a>
+								</div>
+								<div>
+									<a href="<?php echo base_url(); ?>admin/login/logout" class="btn btn-default btn-flat">Keluar</a>
+								</div>
+							</li>
+						</ul>
+					</li>
 
-			</nav>
-		</header>
+				</ul>
+			</div>
+
+		</nav>
+	</header>
 
   		<?php
 			$class_name = '';
@@ -148,7 +148,7 @@
 
 			        <li class="treeview <?php if( ($class_name == 'setting') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/setting">
-			            <i class="fa fa-cog"></i> <span>Settings</span>
+			            <i class="fa fa-cog"></i> <span>Pengaturan</span>
 			          </a>
 			        </li>
 
@@ -162,7 +162,7 @@
 							</span>
 						</a>
 						<ul class="treeview-menu">
-							<li><a href="<?php echo base_url(); ?>admin/captcha/setting"><i class="fa fa-circle-o"></i>Captcha Setting</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/captcha/setting"><i class="fa fa-circle-o"></i>Pengaturan Captcha</a></li>
 							<li><a href="<?php echo base_url(); ?>admin/captcha"><i class="fa fa-circle-o"></i>Captcha</a></li>
 						</ul>
 					</li>
@@ -171,39 +171,39 @@
 			        <li class="treeview <?php if( ($class_name == 'page_home') || ($class_name == 'page_about') || ($class_name == 'page_faq') || ($class_name == 'page_service') || ($class_name == 'page_testimonial') || ($class_name == 'page_news') || ($class_name == 'page_event') || ($class_name == 'page_contact') || ($class_name == 'page_search') || ($class_name == 'page_team') || ($class_name == 'page_portfolio') || ($class_name == 'page_photo_gallery') || ($class_name == 'page_pricing') || ($class_name == 'page_term') || ($class_name == 'page_privacy') ) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-newspaper-o"></i>
-							<span>Page Section</span>
+							<span>Halaman</span>
 							<span class="pull-right-container">
 								<i class="fa fa-angle-left pull-right"></i>
 							</span>
 						</a>
 						<ul class="treeview-menu">
-							<li><a href="<?php echo base_url(); ?>admin/page-home"><i class="fa fa-circle-o"></i>Home Page</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/page-about"><i class="fa fa-circle-o"></i>About Page</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/page-faq"><i class="fa fa-circle-o"></i>FAQ Page</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/page-service"><i class="fa fa-circle-o"></i>Service Page</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/page-testimonial"><i class="fa fa-circle-o"></i>Testimonial Page</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/page-news"><i class="fa fa-circle-o"></i>News Page</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/page-event"><i class="fa fa-circle-o"></i>Event Page</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/page-contact"><i class="fa fa-circle-o"></i>Contact Page</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/page-search"><i class="fa fa-circle-o"></i>Search Page</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/page-team"><i class="fa fa-circle-o"></i>Team Page</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/page-portfolio"><i class="fa fa-circle-o"></i>Portfolio Page</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/page-photo-gallery"><i class="fa fa-circle-o"></i>Photo Gallery Page</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/page-pricing"><i class="fa fa-circle-o"></i>Pricing Page</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/page-term"><i class="fa fa-circle-o"></i>Term Page</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/page-privacy"><i class="fa fa-circle-o"></i>Privacy Page</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-home"><i class="fa fa-circle-o"></i>Halaman Beranda</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-about"><i class="fa fa-circle-o"></i>Halaman Tentang Kami</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-faq"><i class="fa fa-circle-o"></i>Halaman FAQ</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-service"><i class="fa fa-circle-o"></i>Halaman Layanan</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-testimonial"><i class="fa fa-circle-o"></i>Halaman Testimoni</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-news"><i class="fa fa-circle-o"></i>Halaman Berita</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-event"><i class="fa fa-circle-o"></i>Halaman Acara</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-contact"><i class="fa fa-circle-o"></i>Halaman Kontak</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-search"><i class="fa fa-circle-o"></i>Halaman Pencarian</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-team"><i class="fa fa-circle-o"></i>Halaman Tim</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-portfolio"><i class="fa fa-circle-o"></i>Halaman Portofolio</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-photo-gallery"><i class="fa fa-circle-o"></i>Halaman Galeri Foto</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-pricing"><i class="fa fa-circle-o"></i>Halaman Harga</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-term"><i class="fa fa-circle-o"></i>Halaman Syarat dan Ketentuan</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/page-privacy"><i class="fa fa-circle-o"></i>Halaman Privasi</a></li>
 						</ul>
 					</li>
 
 					<li class="treeview <?php if( ($class_name == 'page_dynamic') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/page-dynamic">
-			            <i class="fa fa-cog"></i> <span>Dynamic Pages</span>
+			            <i class="fa fa-cog"></i> <span>Halaman Dinamis</span>
 			          </a>
 			        </li>
 
 					<li class="treeview <?php if( ($class_name == 'footer_setting') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/footer-setting">
-			            <i class="fa fa-cog"></i> <span>Footer Section</span>
+			            <i class="fa fa-cog"></i> <span>Footer</span>
 			          </a>
 			        </li>
 
@@ -215,22 +215,22 @@
 
 			        <li class="treeview <?php if( ($class_name == 'lang') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/lang">
-			            <i class="fa fa-language"></i> <span>Language</span>
+			            <i class="fa fa-language"></i> <span>Bahasa</span>
 			          </a>
 			        </li>
 			      
 			        <li class="treeview <?php if( ($class_name == 'category') || ($class_name == 'news') || ($class_name == 'comment') ) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-newspaper-o"></i>
-							<span>News</span>
+							<span>Berita</span>
 							<span class="pull-right-container">
 								<i class="fa fa-angle-left pull-right"></i>
 							</span>
 						</a>
 						<ul class="treeview-menu">
-							<li><a href="<?php echo base_url(); ?>admin/category"><i class="fa fa-circle-o"></i>Category</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/news"><i class="fa fa-circle-o"></i>News</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/comment"><i class="fa fa-circle-o"></i>Comment</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/category"><i class="fa fa-circle-o"></i>Kategori</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/news"><i class="fa fa-circle-o"></i>Berita</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/comment"><i class="fa fa-circle-o"></i>Komentar</a></li>
 						</ul>
 					</li>
 
@@ -256,7 +256,7 @@
 
 			        <li class="treeview <?php if( ($class_name == 'team_member') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/team_member">
-			            <i class="fa fa-users"></i> <span>Team Member</span>
+			            <i class="fa fa-users"></i> <span>Dosen</span>
 			          </a>
 			        </li>
 
@@ -266,61 +266,26 @@
 			          </a>
 			        </li>
 
-			        <li class="treeview <?php if( ($class_name == 'testimonial') ) {echo 'active';} ?>">
-			          <a href="<?php echo base_url(); ?>admin/testimonial">
-			            <i class="fa fa-user-plus"></i> <span>Testimonial</span>
-			          </a>
-			        </li>
 
 			        <li class="treeview <?php if( ($class_name == 'photo') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/photo">
-			            <i class="fa fa-camera"></i> <span>Photo Gallery</span>
-			          </a>
-			        </li>
-
-			        <li class="treeview <?php if( ($class_name == 'pricing_table') ) {echo 'active';} ?>">
-			          <a href="<?php echo base_url(); ?>admin/pricing_table">
-			            <i class="fa fa-usd"></i> <span>Pricing Table</span>
+			            <i class="fa fa-camera"></i> <span>Galeri Foto</span>
 			          </a>
 			        </li>
 
 			        <li class="treeview <?php if( ($class_name == 'portfolio')||($class_name == 'portfolio_category') ) {echo 'active';} ?>">
 						<a href="#">
-							<i class="fa fa-bars"></i>
-							<span>Portfolio</span>
+							<i class="fa fa-book"></i>
+							<span>Program Studi</span>
 							<span class="pull-right-container">
 								<i class="fa fa-angle-left pull-right"></i>
 							</span>
 						</a>
 						<ul class="treeview-menu">
-							<li><a href="<?php echo base_url(); ?>admin/portfolio_category"><i class="fa fa-circle-o"></i> Portfolio Category</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/portfolio"><i class="fa fa-circle-o"></i> Portfolio</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/portfolio_category"><i class="fa fa-circle-o"></i> Program Studi Category</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/portfolio"><i class="fa fa-circle-o"></i> Program Studi</a></li>
 						</ul>
 					</li>
-
-			        <li class="treeview <?php if( ($class_name == 'client') ) {echo 'active';} ?>">
-			          <a href="<?php echo base_url(); ?>admin/client">
-			            <i class="fa fa-clone"></i> <span>Client</span>
-			          </a>
-			        </li>
-
-			        <li class="treeview <?php if( ($class_name == 'service') ) {echo 'active';} ?>">
-			          <a href="<?php echo base_url(); ?>admin/service">
-			            <i class="fa fa-life-ring"></i> <span>Service</span>
-			          </a>
-			        </li>
-
-			        <li class="treeview <?php if( ($class_name == 'feature') ) {echo 'active';} ?>">
-			          <a href="<?php echo base_url(); ?>admin/feature">
-			            <i class="fa fa-cube"></i> <span>Feature</span>
-			          </a>
-			        </li>
-
-			        <li class="treeview <?php if( ($class_name == 'why_choose') ) {echo 'active';} ?>">
-			          <a href="<?php echo base_url(); ?>admin/why_choose">
-			            <i class="fa fa-paper-plane-o"></i> <span>Why Choose Us</span>
-			          </a>
-			        </li>
 
 			        <li class="treeview <?php if( ($class_name == 'faq') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/faq">

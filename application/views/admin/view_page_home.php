@@ -79,171 +79,7 @@ if(!$this->session->userdata('id')) {
             <div class="box box-info" style="padding-top:0;">
                 <div class="box-body" style="padding-top:0;">
 
-
-                    <h3 class="sec_title">Welcome Section</h3>
-                    <?php echo form_open_multipart(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
-                    <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Video</label>
-                        <div class="col-sm-6">
-                            <textarea name="home_welcome_video" class="form-control" cols="30" rows="10" style="height:100px;"><?php echo $page_home_lang_independent['home_welcome_video']; ?></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Show on Home?</label>
-                        <div class="col-sm-2">
-                            <select name="home_welcome_status" class="form-control select2" style="width:auto;">
-                            <option value="Show" <?php if($page_home_lang_independent['home_welcome_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-                            <option value="Hide" <?php if($page_home_lang_independent['home_welcome_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-                        </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-sm-2"></label>
-                        <div class="col-sm-6">
-                            <button type="submit" class="btn btn-success pull-left" name="form_home_welcome">Update</button>
-                        </select>
-                        </div>
-                    </div>
-                    <?php echo form_close(); ?>
-
-
-
-                    <h3 class="sec_title">Welcome Section (Video Background)</h3>
-                    <?php echo form_open_multipart(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Existing Video Background</label>
-                            <div class="col-sm-6" style="padding-top:6px;">
-                                <img src="<?php echo base_url(); ?>public/uploads/<?php echo $page_home_lang_independent['home_welcome_video_bg']; ?>" class="existing-photo" style="height:180px;">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Video Background </label>
-                            <div class="col-sm-6" style="padding-top:5px;">
-                                <input type="file" name="home_welcome_video_bg">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2"></label>
-                            <div class="col-sm-6">
-                                <button type="submit" class="btn btn-success pull-left" name="form_home_welcome_video_bg">Update</button>
-                            </select>
-                            </div>
-                        </div>
-                    <?php echo form_close(); ?>
-
-
-
-                    <h3 class="sec_title">Why Choose Us Section</h3>
-                    <?php echo form_open_multipart(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Show on Home? </label>
-                            <div class="col-sm-2">
-                                <select name="home_why_choose_status" class="form-control select2" style="width:auto;">
-                                <option value="Show" <?php if($page_home_lang_independent['home_why_choose_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-                                <option value="Hide" <?php if($page_home_lang_independent['home_why_choose_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-                            </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2"></label>
-                            <div class="col-sm-6">
-                                <button type="submit" class="btn btn-success pull-left" name="form_home_why_choose">Update</button>
-                            </select>
-                            </div>
-                        </div>
-                    <?php echo form_close(); ?>
-
-
-
-                    <h3 class="sec_title">Feature Section</h3>
-                    <?php echo form_open_multipart(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Show on Home? </label>
-                            <div class="col-sm-2">
-                                <select name="home_feature_status" class="form-control select2" style="width:auto;">
-                                <option value="Show" <?php if($page_home_lang_independent['home_feature_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-                                <option value="Hide" <?php if($page_home_lang_independent['home_feature_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-                            </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2"></label>
-                            <div class="col-sm-6">
-                                <button type="submit" class="btn btn-success pull-left" name="form_home_feature">Update</button>
-                            </select>
-                            </div>
-                        </div>
-                    <?php echo form_close(); ?>
-
-
-                    <h3 class="sec_title">Service Section</h3>
-                    <?php echo form_open_multipart(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Show on Home? </label>
-                            <div class="col-sm-2">
-                                <select name="home_service_status" class="form-control select2" style="width:auto;">
-                                <option value="Show" <?php if($page_home_lang_independent['home_service_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-                                <option value="Hide" <?php if($page_home_lang_independent['home_service_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-                            </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2"></label>
-                            <div class="col-sm-6">
-                                <button type="submit" class="btn btn-success pull-left" name="form_home_service">Update</button>
-                            </select>
-                            </div>
-                        </div>
-                    <?php echo form_close(); ?>
-
-
-
-                    <h3 class="sec_title">Counter Information Section</h3>
-                    <?php echo form_open(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Show on Home? </label>
-                            <div class="col-sm-2">
-                                <select name="counter_status" class="form-control select2" style="width:auto;">
-                                    <option value="Show" <?php if($page_home_lang_independent['counter_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-                                    <option value="Hide" <?php if($page_home_lang_independent['counter_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label"></label>
-                            <div class="col-sm-6">
-                                <button type="submit" class="btn btn-success pull-left" name="form_home_counter_text">Update</button>
-                            </div>
-                        </div>
-                    <?php echo form_close(); ?>
-
-
-
-                    <h3 class="sec_title">Counter Photo Section</h3>
-                    <?php echo form_open_multipart(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Existing Counter Background</label>
-                            <div class="col-sm-6" style="padding-top:6px;">
-                                <img src="<?php echo base_url(); ?>public/uploads/<?php echo $page_home_lang_independent['counter_photo']; ?>" class="existing-photo" style="height:180px;">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">New Counter Background</label>
-                            <div class="col-sm-6" style="padding-top:6px;">
-                                <input type="file" name="counter_photo">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label"></label>
-                            <div class="col-sm-6">
-                                <button type="submit" class="btn btn-success pull-left" name="form_home_counter_photo">Update</button>
-                            </div>
-                        </div>
-                    <?php echo form_close(); ?>
-
-
-
-                    <h3 class="sec_title">Portfolio Section</h3>
+                    <h3 class="sec_title">Program Studi Section</h3>
                     <?php echo form_open(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Show on Home? </label>
@@ -264,7 +100,7 @@ if(!$this->session->userdata('id')) {
                     <?php echo form_close(); ?>
 
 
-                    <h3 class="sec_title">Booking Section</h3>
+                    <h3 class="sec_title">Kontak Kami Section</h3>
                     <?php echo form_open(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Show on Home? </label>
@@ -285,7 +121,7 @@ if(!$this->session->userdata('id')) {
                     <?php echo form_close(); ?>
 
 
-                    <h3 class="sec_title">Booking Photo Section</h3>
+                    <h3 class="sec_title">Kontak Kami Photo Section</h3>
                     <?php echo form_open_multipart(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Existing Booking Background</label>
@@ -309,7 +145,7 @@ if(!$this->session->userdata('id')) {
 
 
 
-                    <h3 class="sec_title">Team Section</h3>
+                    <h3 class="sec_title">Dosen Tetap Section</h3>
                     <?php echo form_open(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Show on Home? </label>
@@ -330,71 +166,7 @@ if(!$this->session->userdata('id')) {
                     <?php echo form_close(); ?>
 
 
-                    <h3 class="sec_title">Pricing Table Section</h3>
-                    <?php echo form_open(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Show on Home? </label>
-                            <div class="col-sm-2">
-                                <select name="home_ptable_status" class="form-control select2" style="width:auto;">
-                                <option value="Show" <?php if($page_home_lang_independent['home_ptable_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-                                <option value="Hide" <?php if($page_home_lang_independent['home_ptable_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-                            </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2"></label>
-                            <div class="col-sm-6">
-                                <button type="submit" class="btn btn-success pull-left" name="form_home_pricing_table">Update</button>
-                            </select>
-                            </div>
-                        </div>
-                    <?php echo form_close(); ?>
-
-
-                    <h3 class="sec_title">Testimonial Section</h3>
-                    <?php echo form_open(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Show on Home? </label>
-                            <div class="col-sm-2">
-                                <select name="home_testimonial_status" class="form-control select2" style="width:auto;">
-                                <option value="Show" <?php if($page_home_lang_independent['home_testimonial_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-                                <option value="Hide" <?php if($page_home_lang_independent['home_testimonial_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-                            </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2"></label>
-                            <div class="col-sm-6">
-                                <button type="submit" class="btn btn-success pull-left" name="form_home_testimonial">Update</button>
-                            </select>
-                            </div>
-                        </div>
-                    <?php echo form_close(); ?>
-
-                    <h3 class="sec_title">Testimonial Photo Section</h3>
-                    <?php echo form_open_multipart(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Existing Photo</label>
-                            <div class="col-sm-6" style="padding-top:6px;">
-                                <img src="<?php echo base_url(); ?>public/uploads/<?php echo $page_home_lang_independent['home_testimonial_photo']; ?>" class="existing-photo" style="height:180px;">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">New Photo</label>
-                            <div class="col-sm-6" style="padding-top:6px;">
-                                <input type="file" name="home_testimonial_photo">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label"></label>
-                            <div class="col-sm-6">
-                                <button type="submit" class="btn btn-success pull-left" name="form_home_testimonial_photo">Update</button>
-                            </div>
-                        </div>
-                    <?php echo form_close(); ?>
-
-
-                    <h3 class="sec_title">Blog Section</h3>
+                    <h3 class="sec_title">Postingan Section</h3>
                     <?php echo form_open(base_url().'admin/page-home/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">How many item to show? </label>

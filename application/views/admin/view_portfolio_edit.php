@@ -56,49 +56,6 @@ if(!$this->session->userdata('id')) {
 								<textarea class="form-control editor" name="content"><?php echo $portfolio['content']; ?></textarea>
 							</div>
 						</div>
-						
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Client Name</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="client_name" value="<?php echo $portfolio['client_name']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Client Company</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="client_company" value="<?php echo $portfolio['client_company']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Start Date</label>
-							<div class="col-sm-4">
-								<input type="text" name="start_date" class="form-control" id="datepicker" value="<?php echo $portfolio['start_date']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">End Date</label>
-							<div class="col-sm-4">
-								<input type="text" name="end_date" class="form-control" id="datepicker1" value="<?php echo $portfolio['end_date']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Website</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="website" value="<?php echo $portfolio['website']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Cost</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="cost" value="<?php echo $portfolio['cost']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Client Comment</label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="client_comment" style="height:250px;"><?php echo $portfolio['client_comment']; ?></textarea>
-							</div>
-						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Select Category *</label>
 							<div class="col-sm-4">

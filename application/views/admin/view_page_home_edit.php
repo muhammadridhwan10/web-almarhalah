@@ -59,116 +59,46 @@ if(!$this->session->userdata('id')) {
                             </div>
                         </div>
 
-
-                        <h3 class="sec_title">Welcome Section</h3>
+                        <h3 class="sec_title">Program Studi Section</h3>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Title </label>
                             <div class="col-sm-9">
-                                <input type="text" autocomplete="off" class="form-control" name="home_welcome_title" value="<?php echo $page_home['home_welcome_title']; ?>">
+                                <input type="text" autocomplete="off" class="form-control" name="home_portfolio_title" value="<?php echo $page_home['home_portfolio_title']; ?>">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Subtitle </label>
                             <div class="col-sm-9">
-                                <input type="text" autocomplete="off" class="form-control" name="home_welcome_subtitle" value="<?php echo $page_home['home_welcome_subtitle']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Text </label>
-                            <div class="col-sm-9">
-                                <textarea class="form-control editor" name="home_welcome_text"><?php echo $page_home['home_welcome_text']; ?></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Progress Bar 1 - Text </label>
-                            <div class="col-sm-4">
-                                <input type="text" name="home_welcome_pbar1_text" class="form-control" value="<?php echo $page_home['home_welcome_pbar1_text']; ?>">
-                            </div>
-                            <label for="" class="col-sm-2 control-label">Progress Bar 1 - Value </label>
-                            <div class="col-sm-2">
-                                <input type="text" name="home_welcome_pbar1_value" class="form-control" value="<?php echo $page_home['home_welcome_pbar1_value']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Progress Bar 2 - Text </label>
-                            <div class="col-sm-4">
-                                <input type="text" name="home_welcome_pbar2_text" class="form-control" value="<?php echo $page_home['home_welcome_pbar2_text']; ?>">
-                            </div>
-                            <label for="" class="col-sm-2 control-label">Progress Bar 2 - Value </label>
-                            <div class="col-sm-2">
-                                <input type="text" name="home_welcome_pbar2_value" class="form-control" value="<?php echo $page_home['home_welcome_pbar2_value']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Progress Bar 3 - Text </label>
-                            <div class="col-sm-4">
-                                <input type="text" name="home_welcome_pbar3_text" class="form-control" value="<?php echo $page_home['home_welcome_pbar3_text']; ?>">
-                            </div>
-                            <label for="" class="col-sm-2 control-label">Progress Bar 3 - Value </label>
-                            <div class="col-sm-2">
-                                <input type="text" name="home_welcome_pbar3_value" class="form-control" value="<?php echo $page_home['home_welcome_pbar3_value']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Progress Bar 4 - Text </label>
-                            <div class="col-sm-4">
-                                <input type="text" name="home_welcome_pbar4_text" class="form-control" value="<?php echo $page_home['home_welcome_pbar4_text']; ?>">
-                            </div>
-                            <label for="" class="col-sm-2 control-label">Progress Bar 4 - Value </label>
-                            <div class="col-sm-2">
-                                <input type="text" name="home_welcome_pbar4_value" class="form-control" value="<?php echo $page_home['home_welcome_pbar4_value']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Progress Bar 5 - Text </label>
-                            <div class="col-sm-4">
-                                <input type="text" name="home_welcome_pbar5_text" class="form-control" value="<?php echo $page_home['home_welcome_pbar5_text']; ?>">
-                            </div>
-                            <label for="" class="col-sm-2 control-label">Progress Bar 5 - Value </label>
-                            <div class="col-sm-2">
-                                <input type="text" name="home_welcome_pbar5_value" class="form-control" value="<?php echo $page_home['home_welcome_pbar5_value']; ?>">
+                                <input type="text" autocomplete="off" class="form-control" name="home_portfolio_subtitle" value="<?php echo $page_home['home_portfolio_subtitle']; ?>">
                             </div>
                         </div>
 
-                        <h3 class="sec_title">Why Choose Us Section</h3>
+                        <h3 class="sec_title">Dosen Tetap Section</h3>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Title </label>
                             <div class="col-sm-9">
-                                <input type="text" autocomplete="off" class="form-control" name="home_why_choose_title" value="<?php echo $page_home['home_why_choose_title']; ?>">
+                                <input type="text" autocomplete="off" class="form-control" name="home_team_title" value="<?php echo $page_home['home_team_title']; ?>">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Subtitle </label>
                             <div class="col-sm-9">
-                                <input type="text" autocomplete="off" class="form-control" name="home_why_choose_subtitle" value="<?php echo $page_home['home_why_choose_subtitle']; ?>">
+                                <input type="text" autocomplete="off" class="form-control" name="home_team_subtitle" value="<?php echo $page_home['home_team_subtitle']; ?>">
                             </div>
                         </div>
 
-                        <h3 class="sec_title">Feature Section</h3>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Title </label>
-                            <div class="col-sm-9">
-                                <input type="text" autocomplete="off" class="form-control" name="home_feature_title" value="<?php echo $page_home['home_feature_title']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Subtitle </label>
-                            <div class="col-sm-9">
-                                <input type="text" autocomplete="off" class="form-control" name="home_feature_subtitle" value="<?php echo $page_home['home_feature_subtitle']; ?>">
-                            </div>
-                        </div>
 
-                        <h3 class="sec_title">Service Section</h3>
+                        <h3 class="sec_title">Kontak Kami Section</h3>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Title </label>
+                            <label for="" class="col-sm-2 control-label">Kontak Kami Form Title </label>
                             <div class="col-sm-9">
-                                <input type="text" autocomplete="off" class="form-control" name="home_service_title" value="<?php echo $page_home['home_service_title']; ?>">
+                                <input type="text" autocomplete="off" class="form-control" name="home_booking_form_title" value="<?php echo $page_home['home_booking_form_title']; ?>">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Subtitle </label>
+                            <label for="" class="col-sm-2 control-label">Kontak Kami FAQ Title </label>
                             <div class="col-sm-9">
-                                <input type="text" autocomplete="off" class="form-control" name="home_service_subtitle" value="<?php echo $page_home['home_service_subtitle']; ?>">
+                                <input type="text" autocomplete="off" class="form-control" name="home_booking_faq_title" value="<?php echo $page_home['home_booking_faq_title']; ?>">
                             </div>
                         </div>
 
@@ -230,52 +160,8 @@ if(!$this->session->userdata('id')) {
                             </div>
                         </div>
 
-                        <h3 class="sec_title">Portfolio Section</h3>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Title </label>
-                            <div class="col-sm-9">
-                                <input type="text" autocomplete="off" class="form-control" name="home_portfolio_title" value="<?php echo $page_home['home_portfolio_title']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Subtitle </label>
-                            <div class="col-sm-9">
-                                <input type="text" autocomplete="off" class="form-control" name="home_portfolio_subtitle" value="<?php echo $page_home['home_portfolio_subtitle']; ?>">
-                            </div>
-                        </div>
 
-
-                        <h3 class="sec_title">Booking Section</h3>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Booking Form Title </label>
-                            <div class="col-sm-9">
-                                <input type="text" autocomplete="off" class="form-control" name="home_booking_form_title" value="<?php echo $page_home['home_booking_form_title']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Booking FAQ Title </label>
-                            <div class="col-sm-9">
-                                <input type="text" autocomplete="off" class="form-control" name="home_booking_faq_title" value="<?php echo $page_home['home_booking_faq_title']; ?>">
-                            </div>
-                        </div>
-
-
-                        <h3 class="sec_title">Team Section</h3>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Title </label>
-                            <div class="col-sm-9">
-                                <input type="text" autocomplete="off" class="form-control" name="home_team_title" value="<?php echo $page_home['home_team_title']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Subtitle </label>
-                            <div class="col-sm-9">
-                                <input type="text" autocomplete="off" class="form-control" name="home_team_subtitle" value="<?php echo $page_home['home_team_subtitle']; ?>">
-                            </div>
-                        </div>
-
-
-                        <h3 class="sec_title">Pricing Table Section</h3>
+                        <!-- <h3 class="sec_title">Pricing Table Section</h3>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Title </label>
                             <div class="col-sm-9">
@@ -287,10 +173,10 @@ if(!$this->session->userdata('id')) {
                             <div class="col-sm-9">
                                 <input type="text" autocomplete="off" class="form-control" name="home_ptable_subtitle" value="<?php echo $page_home['home_ptable_subtitle']; ?>">
                             </div>
-                        </div>
+                        </div> -->
 
 
-                        <h3 class="sec_title">Testimonial Section</h3>
+                        <!-- <h3 class="sec_title">Testimonial Section</h3>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Title </label>
                             <div class="col-sm-9">
@@ -302,10 +188,10 @@ if(!$this->session->userdata('id')) {
                             <div class="col-sm-9">
                                 <input type="text" autocomplete="off" class="form-control" name="home_testimonial_subtitle" value="<?php echo $page_home['home_testimonial_subtitle']; ?>">
                             </div>
-                        </div>
+                        </div> -->
 
 
-                        <h3 class="sec_title">Blog Section</h3>
+                        <h3 class="sec_title">Postingan Section</h3>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Title </label>
                             <div class="col-sm-9">
